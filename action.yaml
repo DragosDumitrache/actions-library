@@ -1,4 +1,7 @@
 name: 'dangerjs'
+inputs:
+  dangerfile:
+    description: Which dangerfile to use
 runs:
   using: composite
   steps:
@@ -12,6 +15,6 @@ runs:
 
     - name: DangerJS
       run: |
-        yarn danger ci
+        yarn danger ci --dangerfile ${{ inputs.dangerfile }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
