@@ -1,0 +1,7 @@
+name: Greetings
+description: "Hello, World!"
+runs:
+  using: composite
+  steps:
+      - name: Salut
+        run: echo "Hello, World!"

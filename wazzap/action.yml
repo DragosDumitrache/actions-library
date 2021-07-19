@@ -1,0 +1,7 @@
+name: Wazzap
+description: "A horror storry"
+runs:
+  using: composite
+  steps:
+    - name: Shout
+      run: echo "Wazzap!!!"
